@@ -1,0 +1,112 @@
+.task-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+
+}
+
+.task-list--header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+
+    p {
+        font-size: 22px;
+        font-weight: 600;
+        color: white;
+        line-height: 8px;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        padding: 8px;
+    }
+}
+
+.task-list--task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+    border-left: 6px solid rgb(36, 36, 36);
+    border-radius: 8px;
+}
+
+.task-list--task-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    img {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1.0;
+        }
+    }
+
+    p {
+        color: rgba(36, 36, 36, 0.9);
+        font-size: 16px;
+        padding-left: 8px;
+        font-weight: 600;
+    }
+}
+
+.task-list--task-menu {
+    margin-right: 10px;
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.task-list--add-task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px dashed whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.4;
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+
+    p {
+        color: whitesmoke;
+        font-size: 16px;
+        padding-left: 8px;
+        font-weight: 600;
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+}

@@ -1,0 +1,29 @@
+@import "../core/color";
+
+.current-task {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 0px 40px;
+    background-color: $white-opacity-10;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.current-task--number{
+    color: rgba(245, 245, 245, 0.9);
+    padding-right: 16px;
+    font-size: 20px;
+    border-right: 1px solid $tomato-darker;
+}
+
+.current-task--text{
+    color: white;
+    font-weight: 600;
+    padding-left: 24px;
+
+}

@@ -1,0 +1,61 @@
+@import "../core/color";
+@import "../core/typography";
+
+.timer--pomodoro{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: $white-opacity-10;
+    border-radius: 8px;
+    padding: 0px 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timer--tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.timer--tab {
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 8px 8px;
+    line-height: 1px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.timer--tab-active {
+    color: whitesmoke;
+    background-color: $tomato-darker;
+    border-radius: 8px;
+    padding: 12px 8px;
+    font-weight: 600;
+    line-height: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.timer--countdown {
+    text-align: center;
+    font-size: 120px;
+    font-weight: 800;
+    color: whitesmoke;
+    text-shadow: 0px 4px $tomato-darker;
+    line-height: 0px;
+}
+
+//FEATURE: when the user clicks start, the .timer--pomodoro gets a white boarder that acts as a progress bar for the remaining time

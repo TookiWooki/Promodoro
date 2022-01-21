@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"all.css"}
+{"version":3,"sourceRoot":"","sources":["../../../src/scss/abstracts/_block-quick-style.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;AAEA;EACI;EACA","file":"all.css"}

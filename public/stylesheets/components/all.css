@@ -10,7 +10,7 @@ p {
   color: whitesmoke;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 0px 8px;
-  opacity: 0.9;
+  opacity: 0.8;
   cursor: pointer;
   transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
   border-radius: 8px;
@@ -23,7 +23,7 @@ p {
   color: #242424;
   background-color: rgba(36, 36, 36, 0.1);
   padding: 8px 8px;
-  opacity: 0.9;
+  opacity: 0.8;
   cursor: pointer;
   transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
   border-radius: 8px;
@@ -53,6 +53,95 @@ p {
 }
 .button--primary-timer-start:active {
   font-size: 31px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown--content {
+  display: none;
+  position: absolute;
+  right: 0%;
+  margin-top: 4px;
+  background-color: whitesmoke;
+  min-width: 220px;
+  overflow: auto;
+  box-shadow: 0px 4px 8px 0px rgba(36, 36, 36, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.dropdown--item {
+  font-size: 14px;
+  font-family: "Red Hat Text", sans-serif;
+  padding: 4px 8px;
+  margin: 2px 0px;
+  cursor: pointer;
+  display: block;
+}
+.dropdown--item a {
+  color: rgba(36, 36, 36, 0.9);
+  text-decoration: none;
+}
+.dropdown--item:hover {
+  background-color: rgba(236, 90, 64, 0.2);
+}
+.dropdown--item:last-child {
+  margin-top: 4px;
+  border-top: 1px solid rgba(236, 90, 64, 0.2);
+}
+
+.task--dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown--content-task {
+  display: none;
+  position: absolute;
+  right: 0%;
+  margin-top: 4px;
+  background-color: whitesmoke;
+  min-width: 180px;
+  overflow: auto;
+  box-shadow: 0px 4px 8px 0px rgba(36, 36, 36, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.dropdown--item-task {
+  font-size: 14px;
+  padding: 8px 8px;
+  margin: 2px 0px;
+  cursor: pointer;
+  display: block;
+}
+.dropdown--item-task a {
+  color: rgba(36, 36, 36, 0.9);
+  text-decoration: none;
+  font-family: "Red Hat Text", sans-serif;
+  padding: 4px 8px;
+}
+.dropdown--item-task:hover {
+  background-color: rgba(236, 90, 64, 0.2);
+}
+.dropdown--item-task:last-child {
+  margin-top: 4px;
+  border-top: 1px solid rgba(236, 90, 64, 0.2);
+}
+
+.show {
+  display: block;
 }
 
 /*# sourceMappingURL=all.css.map */

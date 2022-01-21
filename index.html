@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="./js/components/dropdown.js"></script>
 </head>
 <body>
     <div class="red-full-container">
@@ -51,15 +52,63 @@
         <section class="task-list">
             <div class="task-list--header">
                 <p>Tasks</p>
-                <img class="button--primary" src="./images/icons8-coderwall-50.png" alt="tasks dropdown menu">
+                <div class="dropdown">
+                    <img onclick="doDropdownTaskHeader()" class="button--primary dropbtn" src="./images/icons8-coderwall-50.png" alt="tasks dropdown menu">
+                    <div id="myDropdown" class="dropdown--content">
+                        <div id="icon-text" class="dropdown--item">
+                            <img src="./images/icons8-approval-50.png" alt="clear finished tasks">
+                            <a href="#">Clear finished tasks</a>
+                        </div>
+                        <div id="icon-text" class="dropdown--item">
+                            <img src="./images/icons8-erase-50.png" alt="clear pomodoro repeats">
+                            <a href="#">Clear pomodoro repeats</a>
+                        </div>
+                        <div id="icon-text" class="dropdown--item">
+                            <img src="./images/icons8-save-50.png" alt="save as template">
+                            <a href="#">Save as template</a>
+                        </div>
+                        <div id="icon-text" class="dropdown--item">
+                            <img src="./images/icons8-index-30.png" alt="add from templates">
+                            <a href="#">Add from templates</a>
+                        </div>
+                        <div id="icon-text" class="dropdown--item">
+                            <img src="./images/icons8-waste-sorting-50.png" alt="clear all tasks">
+                            <a href="#">Clear all tasks</a>
+                        </div>
+                    </div>
+                </div>
+                  
+                  
+
             </div>
             <div class="task-list--task">
                 <div class="task-list--task-text">
                     <img src="./images/icons8-approval-50.png" alt="add icon">
                     <p>Finish task list</p>
                 </div>
+
                 <div class="task-list--task-menu">
-                    <img class="button--primary-dark" src="./images/icons8-menu-vertical-50.png" alt="single task menu">
+                    <div class="dropdown">
+                        <img onclick="doDropdownTask()" class="button--primary-dark dropbtn-task" src="./images/icons8-menu-vertical-50.png" alt="single task menu">
+                        <div id="myDropdown-task" class="dropdown--content-task">
+                            <div id="icon-text" class="dropdown--item-task">
+                                <img src="./images/icons8-repeat-one-50.png" alt="add a repeat">
+                                <a href="#">Add a repeat</a>
+                            </div>
+                            <div id="icon-text" class="dropdown--item-task">
+                                <img src="./images/icons8-edit-50.png" alt="edit task">
+                                <a href="#">Edit task</a>
+                            </div>
+                            <div id="icon-text" class="dropdown--item-task">
+                                <img src="./images/icons8-approval-50.png" alt="mark as done">
+                                <a href="#">Mark as done</a>
+                            </div>
+                            <div id="icon-text" class="dropdown--item-task">
+                                <img src="./images/icons8-waste-sorting-50.png" alt="delete task">
+                                <a href="#">Delete task</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="task-list--add-task">

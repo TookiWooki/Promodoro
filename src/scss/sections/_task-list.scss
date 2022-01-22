@@ -4,7 +4,8 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    max-width: 400px;
+    padding: 0px 40px;
 
 }
 
@@ -34,7 +35,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 400px;
+    // width: 400px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -50,12 +51,11 @@
     flex-direction: row;
     align-items: center;
 
-
     img {
         width: 24px;
         height: 24px;
         margin-left: 10px;
-        opacity: 0.8;
+        opacity: 0.4;
 
         &:hover {
             opacity: 1.0;
@@ -67,10 +67,46 @@
         font-size: 16px;
         padding-left: 8px;
         font-weight: 600;
+        line-height: 1.3em;
+        max-width: 28ch;
     }
 }
 
+.task-list--task-repeats {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-right: 10px;
+
+    img {
+        width: 16px;
+        height: inherit;
+        margin-right: 8px;
+    }
+
+    .task-list--task-repeat-current {
+        font-size: 18px;
+        color: $dark-gray;
+        margin-right: 4px;
+    }
+
+    .task-list--task-repeat-divider {
+        font-size: 14px;
+        color: $gray;
+        margin-right: 4px;
+    }
+
+    .task-list--task-repeat-total {
+        font-size: 14px;
+        color: $gray;
+    }
+}
+
+
 .task-list--task-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-right: 10px;
 
     img {

@@ -1,0 +1,60 @@
+@import "../core/color";
+@import "../core/typography";
+
+
+//Primary
+.button--primary {
+    color: whitesmoke;
+    background-color: rgba($color: #ffffff, $alpha: 0.1);
+    padding: 0px 8px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 8px;
+
+    &:hover {
+        opacity: 1.0;
+    }
+}
+//Primary dark
+.button--primary-dark {
+    color: rgb(36, 36, 36);
+    background-color: rgba(36, 36, 36, 0.1);
+    padding: 8px 8px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 8px;
+
+    &:hover {
+        opacity: 1.0;
+    }
+}
+
+.button--primary-timer-start {
+    width: min-content;
+    color: $tomato-darker;
+    background-color: rgba($color: #ffffff, $alpha: 1);
+    padding: 8px 48px;
+    cursor: pointer;
+    transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 8px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0px 8px rgba($color: #e7e7e7, $alpha: 1.0);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: $font-body;
+
+    &:hover {
+        box-shadow: 0px 8px rgba($color: #d8d8d8, $alpha: 1.0);
+    }
+
+    &:active {
+        font-size: 31px;
+    }
+}
+
+
+//Secondary

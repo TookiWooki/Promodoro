@@ -20,8 +20,10 @@ function doDropdownTaskHeader() {
 
 
 
+
 /* Task Item dropdown */
-function doDropdownTask() {
+export function doDropdownTask() {
+  console.log(doDropdownTask)
     document.getElementById("myDropdown-task").classList.toggle("show");
   }
   
@@ -39,7 +41,5 @@ function doDropdownTask() {
     }
   };
 
-
-  document.getElementById("dropdown").addEventListener('click',function(event){
-    event.stopPropagation()
-});
+  
+//TODO: make both dropdowns close when the mouse is clicked outside of the menu

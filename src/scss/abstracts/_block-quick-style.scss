@@ -1,10 +1,15 @@
-#icon-text {
+
+.flex-horizontal-align {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+}
 
-    img {
-        width: 20px;
-        height: 20px;
-    }
+.ml-40 {
+    margin-left: 40px;
+}
+
+.mr-40 {
+    margin-right: 40px;
 }

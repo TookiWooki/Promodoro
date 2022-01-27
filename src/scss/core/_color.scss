@@ -1,9 +1,13 @@
 
 //white background color
+$white-opacity-5: rgba($color: #ffffff, $alpha: 0.05);
 $white-opacity-10: rgba($color: #ffffff, $alpha: 0.1);
+$white-opacity-15: rgba($color: #ffffff, $alpha: 0.15);
+$white-opacity-50: rgba($color: #ffffff, $alpha: 0.5);
 
 //Darker primary color
 $tomato-darker: rgb(236, 90, 64);
+$tomato-darkerer: rgb(219, 79, 55);
 
 //Dark gray text
 $gray: rgba(112, 111, 111, 0.9);

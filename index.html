@@ -3,125 +3,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro Timer Online - PROmodoro</title>
     <link rel="stylesheet" href="./public/stylesheets/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script src="./js/components/dropdown.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">  
+    <title>Pomodoro Timer Online - PAWmodoro</title>
 </head>
 <body>
     <div class="red-full-container">
-        <div class="main--content">
-            <section class="main--header">
-                <div class="main--header-logo">
-                    <img src="./images/icons8-verified-account-50.png">
-                    <p>PROmodoro</p>
+            <section class="header--container">
+                <div class="header--logo">
+                    <!-- <img src="./images/icons8-verified-account-50.png"> -->
+                    <i class="fas fa-paw"></i>
+                    <p>PAWmodoro</p>
                 </div>
-                <div class="main--header-items">
-                    <div class="main--header-item button--primary">
-                        <img src="images/icons8-chart-50.png" alt="user report icon">
-                        <p>Report</p>
+                <div class="header--items-container">
+                    <div class="header--item button--primary">
+                        <img src="images/icons8-share-50.png" alt="user report icon">
+                        <p>Share</p>
                     </div>
-                    <div class="main--header-item button--primary">
+                    <div class="header--item button--primary">
                         <img src="images/icons8-settings-50.png" alt="settings icon">
                         <p>Settings</p>
                     </div>
-                    <div class="main--header-item button--primary">
+                    <div class="header--item button--primary">
                         <img src="images/icons8-cat-profile-50.png" alt="profile icon">
                         <p>Login</p>
                     </div>
                 </div>
             </section>
-        </div>
-        <section class="timer--pomodoro">
-            <div class="timer--tabs">
-                <p class="timer--tab-active">Pomodoro</p>
-                <p class="timer--tab">Short Break</p>
-                <p class="timer--tab">Long Break</p>
-            </div>
-            <div class="timer--countdown">
-                <p>25:00</p>
-            </div>
-            <div class="button--primary-timer-start">Start</div>
-        </section>
-        <section class="current-task">
-            <p class="current-task--number">#1</p>
-            <p class="current-task--text">Finish task list by adding javascript components and necessary user features to satisfy needs</p>
-        </section>
-        <section class="task-list">
-            <div class="task-list--header">
-                <p>Tasks</p>
-                <div class="dropdown">
-                    <img onclick="doDropdownTaskHeader()" class="button--primary dropbtn" src="./images/icons8-coderwall-50.png" alt="tasks dropdown menu">
-                    <div id="myDropdown" class="dropdown--content">
-                        <div id="icon-text" class="dropdown--item">
-                            <img src="./images/icons8-approval-50.png" alt="clear finished tasks">
-                            <a href="#">Clear finished tasks</a>
+        <div style="display: flex; justify-content: center;">
+            <!-- LEFT CONTAINER -->
+            <section class="accordion-container mr-40">
+                <!-- How It Works -->
+                <div class="accordion-btn">
+                    <p>How It Works</p>
+                    <i class="fas fa-question"></i>
+                </div>
+                <div class="panel">
+                    <p class="panel--information mb-20">The Pomodoro technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks.</p>
+                    <p class="panel--information mb-20">These intervals are usually done in groups of 3-4 at a time, including the short breaks, with a long break after the final interval.</p>
+                    <p class="panel--information sm-info">Use Quick Setup to customize your session.</p>
+                </div>
+                <!-- Quick Setup -->
+                <div class="accordion-btn">
+                    <p>Quick Setup</p>
+                    <i class="fas fa-stopwatch"></i>
+                </div>
+                <div class="panel panel--information">
+                    <h4>Time (minutes)</h4>
+                    <div class="panel--editable-content mb-20">
+                        <div class="panel--content-style">
+                            <p>Pomodoro Interval</p>
+                            <input type="number" value="25">
                         </div>
-                        <div id="icon-text" class="dropdown--item">
-                            <img src="./images/icons8-erase-50.png" alt="clear pomodoro repeats">
-                            <a href="#">Clear pomodoro repeats</a>
+                        <div class="panel--content-style">
+                            <p>Short Break</p>
+                            <input type="number" value="5">
                         </div>
-                        <div id="icon-text" class="dropdown--item">
-                            <img src="./images/icons8-save-50.png" alt="save as template">
-                            <a href="#">Save as template</a>
-                        </div>
-                        <div id="icon-text" class="dropdown--item">
-                            <img src="./images/icons8-index-30.png" alt="add from templates">
-                            <a href="#">Add from templates</a>
-                        </div>
-                        <div id="icon-text" class="dropdown--item">
-                            <img src="./images/icons8-waste-sorting-50.png" alt="clear all tasks">
-                            <a href="#">Clear all tasks</a>
+                        <div class="panel--content-style">
+                            <p>Long Break</p>
+                            <input type="number" value="15">
                         </div>
                     </div>
-                </div>
-                  
-                  
-
-            </div>
-            <div class="task-list--task">
-                <div class="task-list--task-text">
-                    <img src="./images/icons8-approval-50.png" alt="add icon">
-                    <p>Finish task list by adding javascript components and necessary user features to satisfy needs</p>
-                </div>
-
-                <div class="task-list--task-menu">
-                    <div class="task-list--task-repeats">
-                        <!-- <img src="./images/icons8-repeat-50.png" alt="repeat icon"> -->
-                        <p class="task-list--task-repeat-current">1</p>
-                        <p class="task-list--task-repeat-divider">of</p>
-                        <p class="task-list--task-repeat-total">3</p>
+                    <div class="panel--content-style mb-20">
+                        <p class="panel--editable-content">Intervals before Long Break</p>
+                        <input type="number" value="4">
                     </div>
-                    <div class="dropdown">
-                        <img onclick="doDropdownTask()" class="button--primary-dark dropbtn-task" src="./images/icons8-menu-vertical-50.png" alt="single task menu">
-                        <div id="myDropdown-task" class="dropdown--content-task">
-                            <div id="icon-text" class="dropdown--item-task">
-                                <img src="./images/icons8-repeat-one-50.png" alt="add a repeat">
-                                <a href="#">Add a repeat</a>
-                            </div>
-                            <div id="icon-text" class="dropdown--item-task">
-                                <img src="./images/icons8-edit-50.png" alt="edit task">
-                                <a href="#">Edit task</a>
-                            </div>
-                            <div id="icon-text" class="dropdown--item-task">
-                                <img src="./images/icons8-approval-50.png" alt="mark as done">
-                                <a href="#">Mark as done</a>
-                            </div>
-                            <div id="icon-text" class="dropdown--item-task">
-                                <img src="./images/icons8-waste-sorting-50.png" alt="delete task">
-                                <a href="#">Delete task</a>
-                            </div>
+                    <div class="panel--content-style mb-20">
+                        <p class="panel--editable-content">Auto-start Breaks</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <!-- Streaks -->
+                <div class="accordion-btn">
+                    <p>Streaks</p>
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="panel">
+                    <p>hello left</p>
+                </div>
+            </section>
+            <!-- POMODORO TIMER AND TASKS -->
+            <div style="display: flex; flex-direction: column;">
+                <section class="timer--pomodoro">
+                    <div class="timer--tabs">
+                        <p class="timer--tab-active">Pomodoro</p>
+                        <p class="timer--tab">Short Break</p>
+                        <p class="timer--tab">Long Break</p>
+                    </div>
+                    <div class="timer--countdown">
+                        <p>25:00</p>
+                    </div>
+                    <div class="button--primary-timer-start">Start</div>
+                </section>
+                <section class="current-task">
+                    <p class="current-task--number">#1</p>
+                    <p class="current-task--text white50">Your current task will display here.</p>
+                </section>
+                <section class="task-list">
+                    <form autocomplete="off">
+                        <div class="task-list--input">
+                            <input type="text" class="task-input" autocomplete="off" placeholder="Add tasks to divide and conquer..">
+                            <span onclick="addTask()" id="task-button" class="task-list--addBtn task-button">Add</span>
                         </div>
-                    </div>
+                        <ul class="task-list-ul"></ul>
+                    </form>
+                </section>
+            </div>
+            <!-- RIGHT CONTAINER -->
+            <section class="accordion-container ml-40">
+                <div class="accordion-btn">
+                    <p>Notepad</p>
+                    <i class="fas fa-sticky-note"></i>
                 </div>
-            </div>
-            <div class="task-list--add-task">
-                    <img src="./images/icons8-add-50.png" alt="add icon">
-                    <p>Add a task</p>
-            </div>
-        </section>
+                <div class="panel">
+                    <p>hello right</p>
+                
+                </div>
+            </section>
+        </div>       
     </div>
+    <footer class="footer">
+        <div class="flex-horizontal-align">
+            <i class="fas fa-paw mr-5"></i>
+            <p class="sm-text">PAWmodoro by <a href="https://github.com/TookiWooki" alt="TookiWooki Github">TookiWooki</a></h6>
+        </div>
+        <div>
+            <p class="sm-text max-ch-60 text-center">PAWmodoro is purely a learning project with the goal of understanding what makes a good project, the importance of structure as the project grows, and what Javascript can do.<br>I do hope to turn this into something worthwhile in the future!</p>
+        </div>
+        <div class="flex-horizontal-align">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-js-square"></i>
+        </div>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/components/accordion.js"></script>
+    <script src="./js/components/taskList.js"></script>
 </body>
 </html>

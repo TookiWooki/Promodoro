@@ -31,15 +31,24 @@
     line-height: 1px;
     margin-left: 8px;
     margin-right: 8px;
+    padding: 12px 8px;
+    border: 1px solid transparent;
+
 
     &:hover{
         cursor: pointer;
+        background-color: $tomato-darker;
+        border-radius: 8px;
+        padding: 12px 8px;
+        font-weight: 600;
+        line-height: 4px;
+        border: 1px solid transparent;
     }
 }
 
 .timer--tab-active {
     color: whitesmoke;
-    background-color: $tomato-darker;
+    background-color: $tomato-darkerer;
     border-radius: 8px;
     padding: 12px 8px;
     font-weight: 600;

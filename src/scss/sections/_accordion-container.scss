@@ -1,0 +1,117 @@
+@import "../core/color";
+@import "../core/typography";
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.accordion-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white-opacity-10;
+    padding: 0px 10px;
+    width: 300px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    p {
+        color: $tomato-darker;
+        font-weight: 600;
+    }
+
+    &:first-child {
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    &:last-child {
+        border-radius: 0px 0px 8px 8px;
+    }
+}
+
+
+.panel {
+    background-color: $dark-gray;
+    color: whitesmoke;
+    width: 300px;
+    padding: 0px 10px;
+    display: none;
+    overflow: hidden;
+    padding-bottom: 20px;
+    line-height: 1.4em;
+    
+    h4 {
+        margin-block-end: 0.5em;
+    }
+
+    &:last-child {
+        border-radius: 0px 0px 8px 8px;
+    }
+}
+
+//Informational Content
+.panel-information {
+    
+    p {
+        padding: 8px 8px;
+    }
+}
+
+//Editable Content
+.panel--editable-content {
+    padding: 4px 8px;
+    background-color: $white-opacity-10;        
+    border-radius: 8px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+//Bottom Margin on Time panel in "Quick Setup"
+.mb-20{
+    margin-bottom: 20px;
+}
+
+//Content Style - flex horizontal
+.panel--content-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    input {
+        width: 60px;
+        height: 30px;
+        font-size: 16px;
+        padding-left: 10px;
+        color: whitesmoke;
+        background-color: $white-opacity-15;
+        border: 0px;
+        border-radius: 8px;
+        outline: $dark-gray;
+        transition: all 0.2s ease-out;
+    }
+
+    input:focus {
+        background-color: tomato;
+    }
+}
+
+//Accordion button/tabs when Active and Hover
+.active, .accordion-btn:hover {
+    background-color: whitesmoke;
+    
+    p, .fa-question, .fa-stopwatch, .fa-bolt, .fa-sticky-note {
+        color: $dark-gray;
+    }
+}
+
+.fa-question, .fa-stopwatch, .fa-bolt, .fa-sticky-note {
+    color: $tomato-darker;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+}

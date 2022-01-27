@@ -1,11 +1,33 @@
-#icon-text {
+.flex-horizontal-align {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
 }
-#icon-text img {
-  width: 20px;
-  height: 20px;
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.sm-info {
+  font-size: 14px;
+  color: rgba(112, 111, 111, 0.9);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.max-ch-60 {
+  width: 60ch;
+}
+
+.mr-5 {
+  margin-right: 5;
 }
 
 /*# sourceMappingURL=all.css.map */
